@@ -1,0 +1,13 @@
+.o-on{
+    opacity: 1;
+    transition: 1s ease-in;
+    transition-delay: 1s;
+    
+}
+.o-off{
+    opacity: 0;
+    transition: 1s ease-in;
+}
+.d-off{
+    display: none;
+}
