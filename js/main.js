@@ -1,12 +1,21 @@
 const pAbout = document.querySelector('.about');
 const pPorto = document.querySelector('.portfolio');
 const pSocial = document.querySelector('.social');
-
-const anakA= document.querySelectorAll('.anakA');
-
-
+const logo = document.querySelector('.logo h1');
+const contact = document.querySelector('.box-nav');
 const tombol = document.querySelectorAll('.item-bawah');
 
+
+
+
+logo.addEventListener('click',function(){
+    pPorto.style.display = 'none';
+    pSocial.style.display = 'none';
+    pAbout.removeAttribute('style');
+
+    e.preventDefault();
+
+});
 
 tombol[0].addEventListener('click', function(e){
     pAbout.style.display = 'none';
