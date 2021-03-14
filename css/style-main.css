@@ -6,8 +6,16 @@
 
 body{
     position: relative;
+    height: 100vh;
+}
+.bg{
     background-image: url('../img/back.jpg');
     background-size: cover;
+    position: fixed;
+    z-index: -999;
+    min-width: 100%;
+    min-height: 100%;
+    
 }
 p{
     font-family: Arial, Helvetica, sans-serif;
@@ -77,8 +85,7 @@ a{
 
 .container{
     margin: auto;
-    min-height: 520px;
-    max-height: 520px;
+    height: 75%;
     overflow: auto;
     width: 80%;
     display: flex;
@@ -168,10 +175,7 @@ li{
 
 
 footer{
-    left: 5%;
-    top: 580px;
     z-index: 100;
-    position: fixed;
     /* bottom: -150px; */
     display: flex;
     width: 90%;
@@ -202,6 +206,7 @@ footer{
 @media screen and (max-width:480px){
     body{
         background-size: auto;
+        height: 100vh;
     }
     nav{
         display: flex;
